@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p.ex1 {
+            max-width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function reverseString(str, chr) {
+            let arr = str.split("");
+            for (let i = 0; i < chr.length; i++) {
+                arr.splice(0, 1, chr[i]);
+            }
+            return arr;
+        }
+        console.log(reverseString("vishal", "alaphabet"));
+        document.write(reverseString("vishal", "alaphabet"));
+    </script>
+
+</body>
+
+</html>
